@@ -74,3 +74,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .button-outline {
+    @apply rounded-md 
+    border-2 
+    border-amber-400 
+    hover:bg-amber-400/80 
+    hover:text-black 
+    py-2 px-6 
+    text-amber-400 
+    tracking-wider;
+  }
+}
