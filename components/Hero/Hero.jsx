@@ -24,14 +24,14 @@ const Hero = ({ theme }) => {
             <div className="order-2 sm:order-1 space-y-5 sm:pr-32">
               <p
                 data-aos="fade-up"
-                data-aos-delay="1500"
+                data-aos-duration="1500"
                 className="text-amber-400 text-2xl capitalize font-bold"
               >
                 home of quality cars
               </p>
               <h1
                 data-aos="fade-up"
-                data-aos-delay="600"
+                data-aos-duration="600"
                 className="text-5xl lg:text-7xl font-semibold capitalize"
               >
                 bossu rental
@@ -44,8 +44,8 @@ const Hero = ({ theme }) => {
 
               <Button
                 data-aos="fade-up"
-                data-aos-delay="2000"
-                className="bg-amber-400 md:text-xl capitalize w-full md:w-56 duration-300"
+                data-aos-duration="1500"
+                className="bg-amber-400 font-bold md:text-xl capitalize w-full md:w-56 duration-300"
               >
                 get started
               </Button>
