@@ -76,7 +76,7 @@ export default function Home() {
     <>
       {/* <About /> */}
       <section>
-        <div className="dark:bg-black/10 px-10 bg-slate-100 dark:text-white duration-300 min-h-[40rem] sm:grid sm:place-items-center">
+        <div className="dark:bg-dark px-10 bg-slate-100 dark:text-white duration-300 min-h-[40rem] sm:grid sm:place-items-center">
           <div className="container">
             <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
               <div
