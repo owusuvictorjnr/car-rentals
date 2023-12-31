@@ -5,28 +5,31 @@ import Navbar from '@/components/shared/Navbar'
 import React, { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-// import Cars from '@/app/(root)/cars/page'
 
 export default function RootLayout({ children }) {
+  const [theme, setTheme] = useState('dark') // Initial theme for server-side rendering
+
+  // ;('use client')
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme')
+    if (storedTheme) {
+      setTheme(storedTheme)
+    }
+  }, [])
+
   const handleThemeToggle = () => {
     setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'))
     localStorage.setItem('theme', theme)
   }
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark')
 
-  const element = document.documentElement
   useEffect(() => {
-    if (theme === 'dark') {
-      element.classList.add('dark')
-      localStorage.setItem('theme', 'dark')
-    } else {
-      element.classList.remove('dark')
-      localStorage.setItem('theme', 'light')
-    }
-  }, [element.classList, theme])
+    const element = document.documentElement
+    element.classList.toggle('dark', theme === 'dark')
+  }, [theme])
 
   // AOS Init
-  React.useEffect(() => {
+  useEffect(() => {
     AOS.init({
       offsets: 100,
       durations: 800,
@@ -34,7 +37,8 @@ export default function RootLayout({ children }) {
       delay: 100,
     })
     AOS.refresh()
-  })
+  }, [])
+
   return (
     <div className="">
       <Navbar theme={theme} setTheme={handleThemeToggle} />
