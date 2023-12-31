@@ -6,6 +6,7 @@ import Link from 'next/link'
 import CarList from './carList/pages'
 import Testimonial from '@/components/Testimonial/Testimonial'
 import Appstore from '@/components/Appstore/Appstore'
+import Contact from './contact/page'
 
 const skillsData = [
   {
@@ -166,9 +167,41 @@ export default function Home() {
       <Testimonial />
 
       {/* Appstore Banner */}
-      <div className="dark:bg-black bg-white dark:text-white">
+      <section className="dark:bg-black bg-white dark:text-white">
         <Appstore className="dark:bg-dark" />
-      </div>
+      </section>
+
+      {/* Contact us */}
+      <section>
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          className="dark:bg-black dark:text-white py-14"
+        >
+          <div className="container">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 bg-gray-800 py-8 px-6">
+              <div className="col-span-2 space-y-3">
+                <h1 className=" text-4xl sm:text-5xl font-bold text-white">
+                  Imagine the road ahead for our car rental company - ready to
+                  hop in?
+                </h1>
+                <p className=" text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil, perspiciatis eaque cumque iure quasi quibusdam?
+                </p>
+              </div>
+              <div className=" grid place-items-center">
+                <Link
+                  href="/"
+                  className=" inline-block py-2 px-6 bg-amber-400 text-white rounded-lg tracking-wider uppercase hover:bg-amber-400/80 duration-300"
+                >
+                  contact us
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
