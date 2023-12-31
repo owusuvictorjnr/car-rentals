@@ -4,6 +4,8 @@ import Service from './service/page'
 
 import Link from 'next/link'
 import CarList from './carList/pages'
+import Testimonial from '@/components/Testimonial/Testimonial'
+import Appstore from '@/components/Appstore/Appstore'
 
 const skillsData = [
   {
@@ -159,6 +161,14 @@ export default function Home() {
       <section>
         <CarList />
       </section>
+
+      {/*Testimonial   */}
+      <Testimonial />
+
+      {/* Appstore Banner */}
+      <div className="dark:bg-black bg-white dark:text-white">
+        <Appstore className="dark:bg-dark" />
+      </div>
     </>
   )
 }
