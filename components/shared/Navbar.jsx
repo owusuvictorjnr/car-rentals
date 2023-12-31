@@ -39,7 +39,7 @@ const Navbar = ({ theme, setTheme }) => {
   const pathname = usePathname()
   return (
     <>
-      <nav className="shadow-md bg-white dark:bg-black/70 dark:text-white duration-300">
+      <nav className="shadow-md bg-white fixed top-0 z-10 w-full dark:bg-dark dark:text-white duration-300">
         <div className="container">
           <div className="flex justify-between items-center">
             <h1 className="text-3xl font-bold capitalize">bossu car rental</h1>
