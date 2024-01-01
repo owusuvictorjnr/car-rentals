@@ -5,6 +5,7 @@ import Navbar from '@/components/shared/Navbar'
 import React, { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Footer from '@/components/shared/Footer'
 
 export default function RootLayout({ children }) {
   const [theme, setTheme] = useState('dark') // Initial theme for server-side rendering
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
       <Navbar theme={theme} setTheme={handleThemeToggle} />
       <Hero theme={theme} />
       <main className="">{children}</main>
+      <Footer />
     </div>
   )
 }
