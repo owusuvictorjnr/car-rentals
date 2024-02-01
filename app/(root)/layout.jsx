@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <div className="">
       <Navbar theme={theme} setTheme={handleThemeToggle} />
-      <Hero theme={theme} />
+      
       <main className="">{children}</main>
       <Footer />
     </div>

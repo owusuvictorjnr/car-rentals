@@ -7,6 +7,7 @@ import CarList from './carList/pages'
 import Testimonial from '@/components/Testimonial/Testimonial'
 import Appstore from '@/components/Appstore/Appstore'
 import Contact from './contact/page'
+import Hero from '@/components/Hero/Hero'
 
 const skillsData = [
   {
@@ -77,6 +78,9 @@ const skillsData = [
 export default function Home() {
   return (
     <>
+      <div className="">
+        <Hero />
+      </div>
       {/* <About /> */}
       <section>
         <div className="dark:bg-dark px-10 bg-slate-100 dark:text-white duration-300 min-h-[40rem] sm:grid sm:place-items-center">
@@ -105,12 +109,15 @@ export default function Home() {
                     about us
                   </h1>
                   <p data-aos="fade-up">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Debitis dolor numquam ipsum modi architecto.
+                    For more than 10 years, Best Buy Construction has been
+                    Ghana&#39;s trusted partner in building and beautifying
+                    homes. We&#39;re not just a supplier, we&#39;re your
+                    one-stop shop for everything you need to turn your vision
+                    into reality.
                   </p>
                   <p data-aos="fade-up">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ad, voluptatum?
+                    From the foundation up, we offer a comprehensive range of
+                    high-quality products:...
                   </p>
 
                   <button

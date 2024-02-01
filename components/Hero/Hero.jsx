@@ -27,20 +27,18 @@ const Hero = ({ theme }) => {
                 data-aos-duration="1500"
                 className="text-amber-400 text-2xl capitalize font-bold"
               >
-                home of quality cars
+                best buy construction
               </p>
               <h1
                 data-aos="fade-up"
                 data-aos-duration="600"
-                className="text-5xl lg:text-7xl font-semibold capitalize"
+                className=" text-sm md:text-2xl lg:text-7xl font-semibold capitalize"
               >
-                bossu rental
+                Building Your Dreams, Block by Block...
               </h1>
-              <p data-aos="fade-up" data-aos-delay="1000">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-                nam. eaque eveniet magni quidem, nam exercitationem ratione
-                culpa!
-              </p>
+              {/* <p data-aos="fade-up" data-aos-delay="1000">
+        
+              </p> */}
 
               <Button
                 data-aos="fade-up"
